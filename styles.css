@@ -417,7 +417,7 @@ a{
     #contact{
        display: block;
        width: 100vw;
-       height: 38vh;
+       height: 34vh;
     }
 
     .Lheader{
@@ -428,7 +428,6 @@ a{
     .logo1{
         display: block;
         text-align: center;
-        
     }
 
     .dicon{
