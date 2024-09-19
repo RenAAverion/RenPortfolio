@@ -37,6 +37,7 @@ html{
     padding:10px;
     position: fixed;
     box-shadow:  2px 3px 4px rgba(0, 0, 0, .5);
+    z-index: 2;
 }
 
 
@@ -381,8 +382,24 @@ a{
     }
 
     .welcomecontents{
-        display: block;
+        display: flex;
+        flex-direction: column;
         text-align: center;
+    } 
+
+    .wleft{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+  
+    }
+
+    .hide{
+        opacity: 0;
+        position: relative;
+        top: -100px;
+        left: 0;
     }
 
     .picture{
@@ -448,6 +465,7 @@ a{
         padding: 8px 30px;
         margin:10px 0;
         font-size: 1rem;
+        color: black;
     }   
    
 
