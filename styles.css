@@ -88,7 +88,6 @@ a{
     padding-top: 60px;
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
     background: linear-gradient(to top, rgba(0, 0, 0, .5 ) 10%, rgba(0, 0, 0, 0)), url(https://i.postimg.cc/HsT5k2sf/pexels-scottwebb-1022928.png);
     background-size: cover;
@@ -99,20 +98,52 @@ a{
 .welcomecontents{
     display: flex;
     color: #ffffff;
-    align-content: space-between;
+    align-self: center;
+    align-items: center;
 }
 
 .wleft{
-    margin-right: 20px;
+    margin: 0 20px 0 0 ;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.hide{
+    opacity: 0;
+    position: relative;
+    left: 100px;
+    font-family: Jockey One;
+    font-size: 25px;
+    color: white;
+    transition: .5s ease;
+}
+
+.wleft:hover .hide{
+    visibility: visible;
+    opacity: 1;
 }
 
 .picture{
+    content: none;
     width: 150px;
     border-radius: 50%;
 }
 
+.picture:hover{
+    cursor: pointer;
+    backdrop-filter: blur(1px);
+    filter: blur(1px)
+            grayscale(.3)
+            brightness(.5);
+    overflow: hidden;
+}  
+
 .wright{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 170px;
 }
 
 .introduction{
@@ -236,12 +267,19 @@ a{
 .vbtn:hover, .visit:hover{
     background-color: black;
     color: white;
+    transition: .5s ease;
+}
+
+.vbtn:hover::after{
+    content: " >>>";
 }
 
 .more{
     display: flex;
     justify-content: center;
+    transition: 1.5s ease;
 }
+
 
 /**Contacts**/
 #contact{
@@ -428,6 +466,7 @@ a{
     .logo1{
         display: block;
         text-align: center;
+        
     }
 
     .dicon{
