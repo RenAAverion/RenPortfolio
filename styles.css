@@ -5,7 +5,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 5px; /* Width of the scrollbar */
+    width: 0px; /* Width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
